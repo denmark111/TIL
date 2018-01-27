@@ -12,4 +12,4 @@ Lambda 는 알고리즘이나 함수에 전달되는 함수를 정의할 때 사
 
 ## How to use Lambda Function
 아래 예시는 `std::sort()` 에서의 Lambda 사용을 보여준다. 
-    (std::sort(array.begin(), array.end(), [](std::string const& s1, std::string const& s2) { return s1.size() < s2.size(); });)
+    `std::sort(array.begin(), array.end(), [](std::string const& s1, std::string const& s2) { return s1.size() < s2.size(); });`
