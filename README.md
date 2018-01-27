@@ -5,3 +5,6 @@ This repo is to collect & save those things and make my own wiki.
 
 ## Rules
 The rules for TIL is as follows:  
+
+* [GFM]() is preferred
+* Every documents **must** be catagorized  
