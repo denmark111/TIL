@@ -1,8 +1,8 @@
 # Lambda Function 
 
 ### Before using Lambda
-Lambda 식은 C++11 부터 지원하며 C++14부터  
-인자로 auto를 받을 수 있다.
+- Lambda 식은 C++11 부터 지원하며 C++14부터 인자로 auto를 받을 수 있다.
+- 너무 많이 쓰면 가독성이 떨어지니 주의하자.  
 
 ### What is Lambda Function 
 이름이 없는 함수(익명함수) 를 바로 생성하기 위한 기능이다.  
@@ -43,3 +43,7 @@ Lambda Function 을 선언할때는 선언하는 함수 앞에 **[]** 기호를 
     for_each (begin(v), end(v), [](auto n) {cout << n});
 
 위와 같이 코드의 크기와 추가적인 연산과정이 제거된다.
+
+### Referrences
+- [나무위키 : 람다식](https://namu.wiki/w/%EB%9E%8C%EB%8B%A4%EC%8B%9D)
+- [티스토리 블로그 : 람다함수](http://itguru.tistory.com/196)
