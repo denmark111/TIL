@@ -59,3 +59,37 @@
 문자열을 정수형 으로 변환할 때 사용된다. 
 
 ### Some examples of efficient programming
+잘못된 시간이 주어졌을 때 올바른 포멧으로 변경/계산 후 리턴하는 코드이다. 
+    #include <regex>
+    #include <string>
+
+    using namespace std;
+
+    string correct(string timeString)
+    { 
+        if (timeString.empty())
+        {
+            return timeString;
+        }
+        regex reg("(\\d\\d):(\\d\\d):(\\d\\d)");
+        cmatch cm;
+
+        if (regex_match(timeString.c_str(), cm, reg)) 
+        {
+            int hours = atoi(cm[1].first);
+            int minutes = atoi(cm[2].first);
+            int seconds = atoi(cm[3].first);
+
+            minutes += seconds / 60;
+            hours += minutes / 60;
+            seconds %= 60;
+            minutes %= 60;
+            hours %= 24; 
+
+            char result[9];    
+            sprintf(result, "%02d:%02d:%02d", hours, minutes, seconds);
+            return string(result);
+        }
+        return "";
+    }
+
