@@ -90,3 +90,84 @@
 #### `return std::string(result);`  
 프로그램 제작시 함수의 리턴값은 `String` 임을 명시하였으므로  
 위에서 사용된 `char` 형의 변수를 변환 후 리턴한다.  
+
+### My Code
+``` C++
+#include <sstream>
+#include <regex>
+#include <iomanip>
+
+#define T_SEG        3
+#define MAX_MINSEC  60
+#define MAX_HOUR    24
+
+void split(const std::string& str, std::vector<std::string>& vst, char delim)
+{
+  std::stringstream ss(str);
+  std::string token;
+  while (getline(ss, token, delim))
+  {
+    vst.push_back(token);
+  }
+}
+
+void fixValue(std::vector<std::string>& vst, std::string& result)
+{
+  std::ostringstream os;
+  int size = vst.size();
+  int time[T_SEG];
+
+  for (int i = 0; i < size; i++)
+  {
+    time[i] = atoi(vst[i].c_str());
+  }
+
+  if (time[2] >= MAX_MINSEC)
+  {
+    time[2] -= MAX_MINSEC;
+    time[1] += 1;
+  }
+
+  if (time[1] >= MAX_MINSEC)
+  {
+    time[1] -= MAX_MINSEC;
+    time[0] += 1;
+  }
+
+  if (time[0] >= MAX_HOUR)
+  {
+    while (time[0] >= MAX_HOUR)
+    {
+      time[0] -= MAX_HOUR;
+    }
+  }
+
+  for (int i = 0; i < size; i++)
+  {
+    os << std::setw(2) << std::setfill('0') << time[i] << ":";
+  }
+
+  result = os.str();
+  result.pop_back();
+}
+
+std::string correct(std::string timeString)
+{ 
+    std::string result;
+    std::vector<std::string> stv;
+    std::regex e("\\d\\d\\:\\d\\d\\:\\d\\d");
+    
+    if (!regex_match(timeString, e))
+    {
+      result.clear();
+    }
+    else
+    {
+      split(timeString, stv, ':');
+      fixValue(stv, result);
+    }
+    stv.clear();
+    
+    return result;
+}
+```
