@@ -1,6 +1,6 @@
-### [Sorted?yes?no?how?](https://www.codewars.com/kata/580a4734d6df748060000045)  
+## Original Kata : [Sorted?yes?no?how?](https://www.codewars.com/kata/580a4734d6df748060000045)  
 
-#### Code
+### Clever Code
 
     std::string is_sorted_and_how(const std::vector<int>& a)
     {
@@ -40,3 +40,26 @@ is_sorted_and_how 함수가 주어진다.
 각 반환 항목은 삼항연산자를 사용하여 1줄로 축소되었다.  
 3항연산자는 `a ? b : c` 의 형식으로 사용된며 **a 가 참이면 b, 아니라면 c 를 반환**  
 의 의미를 가지고 있다.  
+
+### My Code  
+``` C++
+    std::string is_sorted_and_how(std::vector<int> array)
+    {
+        std::string result;
+    
+        if (is_sorted(array.begin(), array.end()))
+        {
+            result = "yes, ascending";
+        }
+        else if (is_sorted(array.begin(), array.end(), [](int const& v1, int const& v2) {return v1 > v2;}))
+        {
+            result = "yes, descending";
+        }
+        else
+        {
+            result = "no";
+        }
+    
+        return result;
+    }
+```
