@@ -59,9 +59,10 @@
 문자열을 정수형 으로 변환할 때 사용된다. 
 
 ### Some examples of efficient programming
-잘못된 시간이 주어졌을 때 올바른 포멧으로 변경/계산 후 리턴하는 코드이다. 
-    \#include <regex>
-    \#include <string>
+잘못된 시간이 주어졌을 때 올바른 포멧으로 변경/계산 후 리턴하는 코드이다.  
+``` C++
+    #include <regex>
+    #include <string>
 
     using namespace std;
 
@@ -92,4 +93,4 @@
         }
         return "";
     }
-
+```

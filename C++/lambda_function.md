@@ -25,12 +25,13 @@ Lambda Function 을 선언할때는 선언하는 함수 앞에 **[]** 기호를 
 
 ### Code simplification w/ Lambda
 아래 예시는 C++ 에서의 간단한 for 반목문이다.  
-
+``` C++
     vector<int> v = {0, 1, 2, 3, 4};
     for (int i=0; i<5; i++)
     {
         cout << v[i];
     }
+```
 
 위 코드는 for 구문의 매 실행단계마다 i변수의 값을 확인한 후  
 탈출조건과 비교한다. 
@@ -38,9 +39,10 @@ Lambda Function 을 선언할때는 선언하는 함수 앞에 **[]** 기호를 
 이는 불필요한 i의 연산을 사용되며 코드의 길이도 상대적으로 길다.
 
 이를 Lambda 식으로 변형하면
-
+``` C++
     vector<int> v = {0, 1, 2, 3, 4};
     for_each (begin(v), end(v), [](auto n) {cout << n});
+```
 
 위와 같이 코드의 크기와 추가적인 연산과정이 제거된다.
 
