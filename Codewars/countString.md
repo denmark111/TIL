@@ -35,6 +35,8 @@ namespace CountDig
 #### `return std::count(digits.begin(), digits.end(), std::to_string(d)[0]);`  
 `algorithm` 라이브러리의 `std::count()` 함수를 사용해 생성된 전체 문자열에서 `d` 문자를 검색한다.  
 `std::count()` 함수는 주어진 문자열에서 인자로 정해진 문자가 몇번 사용되었는지 세고 그 횟수를 리턴한다.  
+
+### Things to review  
 *std::count() 함수의 3번째 인자에서 왜 char가 아닌 string도 유효한지 알아볼것*  
 *namespace CountDig 의 사용이유 알아볼것*  
 
