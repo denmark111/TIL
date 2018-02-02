@@ -1,7 +1,7 @@
 ## Original Kata : [Count the Digit](https://www.codewars.com/kata/566fc12495810954b1000030/solutions/cpp)  
 
 ### Difficulty : 7kyu
-### Felt like : Midium  
+### Felt like : Medium  
 
 ### Clever Code
 ``` C++
