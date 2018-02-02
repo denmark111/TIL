@@ -11,6 +11,8 @@ string encrypt(string text, int rule) {
 };
 ```
 
+
+
 ### My Code  
 ``` C++
 string encrypt(string text, int rule) 
