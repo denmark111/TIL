@@ -1,4 +1,7 @@
-## Original Kata [Length of missing array](https://www.codewars.com/kata/57b6f5aadb5b3d0ae3000611/solutions/cpp/all/best_practice)  
+## Original Kata : [Length of missing array](https://www.codewars.com/kata/57b6f5aadb5b3d0ae3000611/solutions/cpp/all/best_practice)  
+
+### Difficulty : 6kyu 
+### Felt like : Easy ~ Midium  
 
 ### Clever Code
 ``` C++

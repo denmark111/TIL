@@ -1,5 +1,8 @@
 ## Original Kata : [Speed Control](https://www.codewars.com/kata/speed-control/solutions/cpp)
 
+### Difficulty : 7kyu
+### Felt like : Easy  
+
 ### Clever Code
 ``` C++
 class GpsSpeed

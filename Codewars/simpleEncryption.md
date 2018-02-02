@@ -1,5 +1,8 @@
 ## Original Kata [Basic Encryption](http://www.codewars.com/kata/5862fb364f7ab46270000078/solutions/cpp)
 
+### Difficulty : 6kyu
+### Felt like : Easy  
+
 ### Clever Code  
 ``` C++
 string encrypt(string text, int rule) {

@@ -1,5 +1,8 @@
 ## Original Kata : [Correct the time-string](https://www.codewars.com/kata/correct-the-time-string/cpp)  
 
+### Difficulty : 7kyu
+### Felt like : Hard
+
 ### Clever Code  
 ``` C++
     #include <regex>

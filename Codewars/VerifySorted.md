@@ -1,5 +1,8 @@
 ## Original Kata : [Sorted?yes?no?how?](https://www.codewars.com/kata/580a4734d6df748060000045)  
 
+### Difficulty : 7kyu  
+### Felt like : Easy  
+
 ### Clever Code
 ``` C++
     std::string is_sorted_and_how(const std::vector<int>& a)
