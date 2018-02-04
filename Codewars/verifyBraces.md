@@ -26,13 +26,38 @@ bool valid_braces(std::string braces)
 }
 ```  
 
-####
+
+
+#### `bool valid_braces(std::string braces)`  
+위 함수는 `(){}[]` 이 포함된 문자열을 입력받고 그 문자열이 올바른 형태인지 검사한다.  
+
+#### `map<char, char> dict = {{'(',')'}, {'[',']'}, {'{','}'}}`
+
+#### `vector<char> v = {'(', '{', '['}`
+
+#### `stack<char> s`
+
+#### `for (auto c : braces)`
+
+#### `if (find(v.begin(), v.end(), c) != v.end())`
+
+#### `s.push(dict[c]);`
+
+#### `else if (s.empty() || c != s.top())`  
+
+#### `return false`  
+
+#### `else if (c == s.top())`  
+
+#### `s.pop()`   
+
+#### `return s.empty()`   
 
 ### My Code  
 ``` C++
 #define PARENTHESE  1
 #define CURLYBRACE  2
-#define BRACKET      3
+#define BRACKET     3
 
 bool valid_braces(std::string braces) 
 {
