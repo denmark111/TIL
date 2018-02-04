@@ -67,3 +67,4 @@ is_sorted_and_how 함수가 주어진다.
         return result;
     }
 ```
+

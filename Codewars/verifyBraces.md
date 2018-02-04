@@ -1,4 +1,4 @@
-## Original Kata [Integers: Recreation One](https://www.codewars.com/kata/valid-braces/solutions/cpp)  
+## Original Kata : [Integers: Recreation One](https://www.codewars.com/kata/valid-braces/solutions/cpp)  
 
 ### Difficulty : 4kyu  
 ### Felt like : Medium ~ Hard  

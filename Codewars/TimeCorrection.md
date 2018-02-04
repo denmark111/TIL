@@ -181,7 +181,7 @@ std::string correct(std::string timeString)
 정규표현식 이라고도 불리는 `regex`는 나중에 실무에서도 많이 사용된다고 하니   
 위의 Clever Code 를 잘 알아두도록 하자.  
 
-내가 작성한 코드는 총 **3개** ~함수패티쉬?~ 의 함수를 가지고 있다.  
+내가 작성한 코드는 총 **3개**의 함수를 ~*함수패티쉬?*~ 가지고 있다.  
 각 함수의 역할은 다음과 같다.  
 
 - `void split(const std::string& str, std::vector<std::string>& vst, char delim)`  
@@ -195,15 +195,13 @@ std::string correct(std::string timeString)
 각 시간표현범위를 초과한 변수는 올림하고 다른 변수에 반영해준다.  
 문제에서 주어진 시간의 표현방식은 무조건 2자리 이다.  
 따라서 숫자가 1개일경우 앞에 0으로 패딩을 해주어야 하는데 아래와 같은 방법이 사용되었다. 
-
 `os << std::setw(2) << std::setfill('0') << time[i] << ":"`  
 이 문장때문에 `sstream` 과 `iomanip` 라이브러리가 추가되었다.  
-~sprintf() 쓰면 다 해결됬을것을 ㅉㅉ~   
+~*sprintf() 쓰면 다 해결됬을것을 ㅉㅉ*~   
 `setw(2)` 는 문자의 자릿수를 2개로 설정한다는 뜻이고, `setfill('0')` 는   
 빈자리를 0으로 패딩하겠다는 뜻이다.  
-문장 맨 뒤의 `":"` 떄문에 여기서는 무조건 XX:YY**:** 형식으로 저장된다.  
+문장 맨 뒤의 `":"` 떄문에 여기서는 무조건 XX:YY: 형식으로 저장된다.  
 따라서 밑에서 결과에 `pop_back()`을 이용해 끝에서 문자를 하나 제거한다.  
-
 `result = os.str();`  
 결과로 반환할 변수에 스트림의 내용을 집어넣고  
 `result.pop_back();`  

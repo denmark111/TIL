@@ -1,4 +1,4 @@
-## Original Kata [Product of consecutive Fib numbers](https://www.codewars.com/kata/5541f58a944b85ce6d00006a)
+## Original Kata : [Product of consecutive Fib numbers](https://www.codewars.com/kata/5541f58a944b85ce6d00006a)
 
 ### Difficulty : 5kyu
 ### Felt like : Hard    
@@ -149,6 +149,8 @@ std::vector<ull> ProdFib::productFib(ull prod)
 `std::vector<ull> ProdFib::productFib()` 함수는 문제에 부합하는 2개의 피보나치 수를  
 찾기위해 설계되었다.  
 문제에서는 임의의 정수 `prod` 가 주어지고 x * y = prod 를 만족하는 x, y를 피보나치 수열에서 찾아야 한다.  
+x와 y는 피보나치 수열에서 1의 인덱스 차이를 가진다.  
+즉 서로 이웃하는 수라는 말.  
 만약 만족하는 수가 없을경우 x * y > prod 를 만족하는 x, y를 찾는다.  
 
 `double phi = (1 + sqrt(5)) / 2`  

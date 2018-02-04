@@ -1,4 +1,4 @@
-## Original Kata [Integers: Recreation One](https://www.codewars.com/kata/55aa075506463dac6600010d/solutions/cpp)  
+## Original Kata : [Integers: Recreation One](https://www.codewars.com/kata/55aa075506463dac6600010d/solutions/cpp)  
 
 ### Difficulty : 5kyu  
 ### Felt like : Easy ~ Medium  
