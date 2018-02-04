@@ -30,11 +30,7 @@ string SumSquaredDivisors::listSquared(long long m, long long n)
 }
 ```
 
-
-
-
-
-
+####
 
 ### My Code  
 ``` C++
