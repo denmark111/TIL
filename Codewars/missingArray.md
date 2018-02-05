@@ -127,4 +127,5 @@ int getLengthOfMissingArray(std::vector<std::vector<TYPE>> arrayOfArrays)
 6. 아니라면 `bool` 배열을 검사해 어떤 인덱스가 `false` 인지 확인하고 그 인덱스를 반환한다.  
 
 위의 Clever Code에 비해서 My Code 는 정렬을 수행하지 않는다.  
-따라서 시작시 가장 작은 길이를 가진 원소를 정해주어야 하는데 이 과정에서 어차피 주어진 배열을 모두 탐색해야 하므로 **탐색과 검출이 동시에 이루어지는 Clever Code 에 비해 비효율적이다.**  
+따라서 시작시 가장 작은 길이를 가진 원소를 정해주어야 하는데  
+이 과정에서 어차피 주어진 배열을 모두 탐색해야 하므로 **탐색과 검출이 동시에 이루어지는 Clever Code 에 비해 비효율적이다.**  
