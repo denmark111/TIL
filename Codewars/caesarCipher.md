@@ -259,3 +259,8 @@ string CaesarCipher::demovingShift(vector<string> &s, int shift)
   return result;
 }
 ```
+
+*코드다이어트좀 하자*  
+지금 생각해보니 코드 작성할 때 문자열 시프팅기능을 따로 뺐어야 했다.  
+암호화, 복호화시 같은 기능을 사용하는거라 코드의 중복이 일어난다.  
+
