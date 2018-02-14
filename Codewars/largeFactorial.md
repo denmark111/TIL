@@ -130,3 +130,6 @@ string factorial(int factorial)
 
 위의 Clever Code와 99.9% 동일한 방식으로 작동한다.  
 다만 이 코드는 처음 시작할 때 벡터배열에 1을 가지고 시작한다.  
+그 이유는 작성된 코드가 2번째 원소를 기준으로 시작하기 때문이다.  
+
+여기서 사용된 곱셈법에 대해서는 [C++/Handling_bignumbers](https://github.com/denmark111/TIL/blob/master/C%2B%2B/Handling_bignumbers.md) 에 기술되어있다.  
