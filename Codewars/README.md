@@ -1,4 +1,4 @@
-# Purpose(Spolier Alert!!)  
+# Purpose  
 
 ![Codewars rank](https://www.codewars.com/users/denmark111/badges/large)
 
