@@ -1,4 +1,4 @@
-![Codewars rank](https://www.codewars.com/users/denmark111/badges/large)
+[![Codewars rank](https://www.codewars.com/users/denmark111/badges/large)](https://www.codewars.com/users/denmark111)
 
 이 문서는 Codewars 의 Kata 를 해결하면서 발견한 코드를 저장하는 디렉토리입니다.  
 가장 많은 추천을 받은 코드와 본인이 작성한 코드를 같이 첨부합니다.  
