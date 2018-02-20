@@ -58,6 +58,6 @@ map<int, string> mp;
 생성하고 참조한다.  
 따라서 원소를 참조할 때에는 반드시 `find()` 함수를 이용해 존재유무를 판단하자.  
 
-- TBD..
+- TBD....
 
 더 많은 멤버함수는 [이곳](http://www.cplusplus.com/reference/map/map/)에서 확인가능  
