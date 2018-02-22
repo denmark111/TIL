@@ -20,3 +20,8 @@ STL의 여러 종류는 별도의 문서에서 기술한다.
 
 ## How to use it?  
 스택을 사용하는 방법은 여타 STL 컨테이너와 다를바가 없다.  
+``` C++  
+#include <stack>
+
+stack st;
+```
