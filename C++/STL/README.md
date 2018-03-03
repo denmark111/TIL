@@ -20,16 +20,16 @@ STL에는 총 4가지의 종류가 있다
 먼저 **Sequence container** 에는 다음과 같은 컨테이너들이 포함된다.  
 - array  
 - vector  
-- deque  
+- [deque](https://github.com/denmark111/TIL/blob/master/C%2B%2B/STL/deque.md)  
 - forward_list  
-- list  
+- [list](https://github.com/denmark111/TIL/blob/master/C%2B%2B/STL/list.md)  
 
 이 컨테이너는 입력되는 데이터를 순차적으로 저장하여 관리한다.  
 따라서 멤버함수로 `push_back(), pop_back(), at()` 등이 제공된다.  
 입력되는 순으로 저장되므로 자동정렬등의 기능은 없다.  
 
 **Container adaptor** 는 다음과 같은 자료형을 가진다.  
-- stack  
+- [stack](https://github.com/denmark111/TIL/blob/master/C%2B%2B/STL/stack.md)  
 - queue  
 - priority_queue  
 
@@ -40,7 +40,7 @@ STL에는 총 4가지의 종류가 있다
 **Associative container** 는 다음과 같은 자료형을 가진다.  
 - set  
 - multiset  
-- map  
+- [map](https://github.com/denmark111/TIL/blob/master/C%2B%2B/STL/map.md)  
 - multimap  
 
 이 컨테이너들은 데이터를 자동으로 정렬해 관리한다.  
